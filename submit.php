@@ -2,7 +2,7 @@
 // Establish connection to the database
 $servername = "localhost"; // Change this to your database server name
 $username = "username"; // Change this to your database username
-$password = " "; // Change this to your database password
+$password = ""; // Change this to your database password
 $dbname = "Contact"; // Change this to your database name
 
 // Create connection

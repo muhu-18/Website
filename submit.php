@@ -19,7 +19,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Insert data into database
-$sql = "INSERT INTO Feedback (name, email, message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO feedback (name, email, message) VALUES ('$name', '$email', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Message sent successfully";

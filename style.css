@@ -13,12 +13,7 @@ body {
 .container {
 	padding: 10px 10%;
 }
-.back{
-	width:100%;
-	backgroung-image:url(back.png);
-	background-size: cover;
-	background-position: left center;
-}
+
 
 .logo {
 	width: 140px;

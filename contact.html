@@ -17,7 +17,7 @@
                 <p>+254714900046</p>
             </div>
             <div class="contact-right">
-                <form method="post" actions="submit.php"?>
+                <form id ="contact-form" method="post" action="submit.php"?>
                     <input type="text" name="Name" placeholder=" Your Name" required/>
                     <input type="email" name="email" placeholder="Your email" required />
                     <textarea name="Message" rows="3" placeholder="Your Message"></textarea>
@@ -29,6 +29,30 @@
            <a href="javascript:history.back()">Back</a>
         </div>
     </div>
+   <script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    var formData = new FormData(this);
+    
+    fetch('submit.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Form submitted successfully');
+        } else {
+            alert('Form submission failed');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while submitting the form');
+    });
+});
+</script>
+    
    
 
 </body>

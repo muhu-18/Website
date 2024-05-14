@@ -14,12 +14,12 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
-$name = $_POST['Name'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-$message = $_POST['Message'];
+$message = $_POST['message'];
 
 // Insert data into database
-$sql = "INSERT INTO Feedback (Name, email, Message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO Feedback (name, email, message) VALUES ('$name', '$email', '$message')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Message sent successfully";

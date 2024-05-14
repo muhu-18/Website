@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="background.jpg" />
+            </div>
+            <div class="about-col-2">
+                <h1>About Me</h1>
+                <p></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Interests')">Interests</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                         <li>Dedicated individual passionate about networking and problem-solving.</li>
+                         <li>Experience in various extracurricular activities and academic pursuits.</li>
+                         <li>Strong teamwork skills, attention to detail, and proactive problem-solving abilities.</li>
+                         <li>Effective communication and collaboration skills.</li>
+            </ul>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Interests">
+                    <ul>
+                       
+                        <li> Swimming<br> Playing board games<br> Watching crime documentaries<br> Trying out new recipes</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br /> Studying Bachelor of Business Information Technology at Strathmore Universit</li>
+                        <li><span>2021 - 2022</span><br />Studying Diploma in Business Information Technology in Strathmore University</li>
+                        <li><span>2015 - 2018</span><br />Highschool</li>
+                        <li><span>2007 - 2014</span><br />Primary School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="back-button">
+           <a href="javascript:history.back()">Back</a>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    
+
+</body>
+</html>

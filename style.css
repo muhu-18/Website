@@ -45,7 +45,7 @@ nav {
 					content: '';
 					width: 0%;
 					height: 3px;
-					background: #ff004f;
+					background: #40E0D0;
 					position: absolute;
 					left: 0;
 					bottom: -6px;
@@ -79,7 +79,7 @@ nav {
 	}
 
 		.header-text h1 span {
-			color: #ff004f;
+			color: #40E0D0;
 		}
 
 /* About Section Styles */
@@ -131,7 +131,7 @@ nav {
 		content: '';
 		width: 0;
 		height: 3px;
-		background: #ff004f;
+		background: #40E0D0;
 		position: absolute;
 		left: 0;
 		bottom: -8px;
@@ -261,7 +261,7 @@ form .btn2 {
 	font-size: 18px;
 	margin-top: 20px;
 	cursor: pointer;
-	background-color: #ff004f;
+	background-color: #40E0D0;
 }
 
 
@@ -274,7 +274,7 @@ form .btn2 {
 	.back-button a {
 		display: inline-block;
 		padding: 10px 20px;
-		background-color: #ff004f;
+		background-color: #40E0D0;
 		color: #fff;
 		text-decoration: none;
 		border-radius: 5px;
